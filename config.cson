@@ -1,7 +1,66 @@
 "*":
+  "atom-lint":
+    csslint:
+      path: "/usr/local/bin/csslint"
+      rules:
+        ignore: [
+          "adjoining-classes"
+        ]
+    ignoredNames: [
+      "tmp/**"
+    ]
+    jscs:
+      path: "/usr/local/bin/jscs"
+    jshint:
+      path: "/usr/local/bin/jshint"
+    "linter-js-yaml":
+      jsYamlExecutablePath: null
+    rubocop:
+      ignoredNames: [
+        "vendor/**"
+        "db/schema.rb"
+      ]
+      path: "rubocop"
+    "scss-lint":
+      path: "/usr/local/lib/node_modules/scsslint/lib/scsslint.js"
+  blame: {}
   core:
+    disabledPackages: [
+      "symbols-view"
+      "atom-alignment"
+      "metrics"
+      "auto-indent"
+    ]
+    followSymlinks: true
+    ignoredNames: [
+      ".git"
+      ".svn"
+      ".DS_Store"
+    ]
+    projectHome: "~/src"
     telemetryConsent: "no"
+  editor:
+    backUpBeforeSaving: true
+    invisibles: {}
+    showIndentGuide: true
   "exception-reporting":
-    userId: "9efd242e-5521-4e88-bf1d-25a1ff679788"
+    userId: "4f7a63b0-e441-4066-81a1-9183e7483a68"
+  "fuzzy-finder":
+    ignoredNames: [
+      "**/vendor/bundle/**/*"
+    ]
+  "git-blame":
+    ignoreWhiteSpaceDiffs: true
+  goto:
+    logToConsole: true
+  linter: {}
+  "linter-reek": {}
+  localization:
+    CurrentLanguage: "Default"
+  "merge-conflicts": {}
+  "project-quick-open":
+    projectPaths: "~/src"
+  "tree-view":
+    hideVcsIgnoredFiles: true
   welcome:
     showOnStartup: false
